@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Jet-X",
+    "version": "0.0.1",
+    "description": "Extensão para integrar e interagir com o chatbot Jet-X.",
+    "author": "Joel Rodrigues",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "host_permissions": [
+      "http://localhost:3000/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }, 
+    "content_security_policy": {
+  "extension_pages": "script-src 'self'; object-src 'self';"
+}
+  }
